@@ -34,6 +34,17 @@
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <script type='text/javascript' src='pace.js'></script>
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
 <style>
 /* unvisited link */
 a:link {
@@ -56,6 +67,7 @@ a:active {
 }
 body {background-color:black; font-family:lucidaconsole}
 #text {color:limegreen}
+#warn {color:red}
 #cntr {display:flex;justify-content:center}
 #hidebars {color:black}
 #foo {display: none}
@@ -296,7 +308,7 @@ body {background-color:black; font-family:lucidaconsole}
       ░  ░    ░          ░  ░░  ░      ░  ░         ░    ░  ░   ░    
                                                               ░      
                       Page Version 0.4.7.1m
-</pre>
+<div id="warn">		/!\ WARNING: LOW COMPATABILITY</div></pre>
 </div>
 <br><div id="floater"><div id=cntr>
 <a href="#" onclick="toggle_visibility('foo');"><b>Show/Hide Request Form</b></a>
